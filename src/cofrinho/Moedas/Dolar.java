@@ -1,27 +1,27 @@
-package cofrinho;
+package cofrinho.Moedas;
 
 public class Dolar extends Moeda {
-    Dolar(float dado, String tipo) {
+    public Dolar(float dado, String tipo) {
         super(dado, tipo);
     }
 
     @Override
-    void getMoeda() {
+    public void getMoeda() {
         System.out.println("Dolar - "+ dado);
     }
 
     @Override
-    String getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
     @Override
-    float getValorMoeda() {
+    public float getValorMoeda() {
         return dado;
     }
 
     @Override
-    float getConversao() {
+    public float getConversao() {
         return (float) (dado * 5.34);
     }
 }

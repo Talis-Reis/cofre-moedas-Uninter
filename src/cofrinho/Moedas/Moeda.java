@@ -1,4 +1,4 @@
-package cofrinho;
+package cofrinho.Moedas;
 
 abstract public class Moeda {
     public float dado;
@@ -9,11 +9,11 @@ abstract public class Moeda {
         this.tipo = tipo;
     }
 
-    abstract void getMoeda();
+    public abstract void getMoeda();
 
-    abstract String getTipo();
-    abstract float getValorMoeda();
+    public abstract String getTipo();
+    public abstract float getValorMoeda();
 
-    abstract float getConversao();
+    public abstract float getConversao();
 
 }

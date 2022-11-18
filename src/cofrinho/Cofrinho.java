@@ -1,6 +1,10 @@
 package cofrinho;
 
-import com.sun.security.jgss.GSSUtil;
+import cofrinho.EntradaDados.EntradaDados;
+import cofrinho.Moedas.Dolar;
+import cofrinho.Moedas.Euro;
+import cofrinho.Moedas.Moeda;
+import cofrinho.Moedas.Real;
 
 import java.util.ArrayList;
 
@@ -16,10 +20,10 @@ public class Cofrinho {
         for(;;){
             System.out.println("#############################################");
             System.out.println("COFRINHO");
-            System.out.println("1-Adicionar cofrinho.Moeda");
-            System.out.println("2-Remover cofrinho.Moeda");
+            System.out.println("1-Adicionar cofrinho.Moedas.Moeda");
+            System.out.println("2-Remover cofrinho.Moedas.Moeda");
             System.out.println("3-Listar Moedas");
-            System.out.println("4-Calcular total convertido para cofrinho.Real");
+            System.out.println("4-Calcular total convertido para cofrinho.Moedas.Real");
             System.out.println("0-Encerrar");
             opcao = Integer.parseInt(entradaDados.dados.nextLine());
             System.out.println(" ");

@@ -1,28 +1,28 @@
-package cofrinho;
+package cofrinho.Moedas;
 
 public class Real extends Moeda {
 
-    Real(float dado, String tipo) {
+    public Real(float dado, String tipo) {
         super(dado, tipo);
     }
 
     @Override
-    void getMoeda() {
+    public void getMoeda() {
         System.out.println("Real - "+ dado);
     }
 
     @Override
-    String getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
     @Override
-    float getValorMoeda() {
+    public float getValorMoeda() {
         return dado;
     }
 
     @Override
-    float getConversao() {
+    public float getConversao() {
         return dado;
     }
 
